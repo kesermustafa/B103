@@ -95,7 +95,8 @@ public enum UsStates {
 
     public static String getStateNameFromCapital(String capital){
 
-       return Arrays.stream(values()).
+       return Arrays.
+               stream(values()).
                filter(UsStates->UsStates.getCapital().equals(capital)).
                findFirst().
                get().
@@ -105,7 +106,8 @@ public enum UsStates {
 
     public static String getStateCapitalFromAbbreviation(String capital){
 
-        return Arrays.stream(values()).
+        return Arrays.
+                stream(values()).
                 filter(UsStates->UsStates.getCapital().equals(capital)).
                 findFirst().
                 get().

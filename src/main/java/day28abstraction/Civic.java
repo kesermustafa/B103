@@ -2,19 +2,12 @@ package day28abstraction;
 
 public class Civic implements Engine, Ac, Hood{
 
-    // bir class i bir interface in choldi yapmak icin "implements" kullaniriz.
-
     /*
-   1- Atomic olsun diye "parent"i parcaladim ama bir "Child Class" in birden fazla "parent" i oldu,
-   bu ise Java'da mumkun degildir. Cunku Java "multiple Inheritance" i desteklemez.
-
-   "multiple inheritance" class'larda mumkun degildir fakat Java "interface" isimli yeni bir yapi olusturdu
-    bu yapida "multiple inheritance" a musaade etti.
-
-    2-2) interface deki tum method'lar "absract" oldugu icin "interface'lere "fully abstraction" denir.
-"Abstract Class" larda abstract method ve "concrete method" bir arada kullanildigi icin
-"Abstract Class"  lara "fully absraction" denmez.
-    */
+    Bir method parent class da "abstract" method ise child class o methodu override edip
+    kullanmak zorundadir.
+    Bu yuzden herhangi bir fonksiyonu child class icin mecburi yapmak isterseniz o methodu
+    abstract yapmalisiniz...
+     */
 
 
     @Override
@@ -47,4 +40,7 @@ public class Civic implements Engine, Ac, Hood{
     public void steel() {
         System.out.println("Uses climante technology");
     }
+
+
+
 }

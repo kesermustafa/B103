@@ -6,6 +6,7 @@ public abstract class Animal {
     // Bir methodu abstract yapmak icin 1-method bodyi sil 2- abstract kullan
     // abstract methodlar abstract class icinde olmalidir..
     // "abstract" ==> soyut         concrete ==> somut
+    // abstract classlarda hem abstract method hem concrete(non-abstract) kullanilabilir..
 
     public abstract void eat();
 
